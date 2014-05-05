@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/rotatingVOR"
+        android:layout_width="335dp"
+        android:layout_height="335dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="center"
+        android:src="@drawable/dial4" />
+
+    <Button
+        android:id="@+id/OBS"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/rotatingVOR"
+        android:layout_alignLeft="@+id/rotatingVOR"
+        android:background="@drawable/round_button"
+        android:text="OBS" />
+
+    <Button
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/rotatingVOR"
+        android:layout_alignTop="@+id/OBS"
+        android:layout_marginTop="36dp"
+        android:text="Radio"
+        android:background="@drawable/button" />
+
+    <ImageView
+        android:id="@+id/toVOR"
+        android:layout_width="335dp"
+        android:layout_height="335dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="center"
+        android:src="@drawable/tovor" />
+
+    <TextView
+        android:id="@+id/radialDisp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/rotatingVOR"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/OBS"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/fromVOR"
+       android:layout_width="335dp"
+        android:layout_height="335dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="center"
+        android:src="@drawable/fromvor" />
+
+    <ImageView
+        android:id="@+id/arrow"
+       android:layout_width="335dp"
+        android:layout_height="335dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="center"
+        android:src="@drawable/arrow" />
+
+    <SeekBar
+        android:id="@+id/speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
